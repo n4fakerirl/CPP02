@@ -6,7 +6,7 @@
 /*   By: ocviller <ocviller@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/05 10:40:03 by ocviller          #+#    #+#             */
-/*   Updated: 2026/01/05 10:44:17 by ocviller         ###   ########.fr       */
+/*   Updated: 2026/01/05 15:03:07 by ocviller         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ Fixed::Fixed(const Fixed &other)
 
 void Fixed::setRawBits(int const raw)
 {
-    std::cout << "setRawBits member function called\n";
     this->_fixed_value = raw;
 }
 
