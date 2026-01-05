@@ -6,7 +6,7 @@
 /*   By: ocviller <ocviller@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 14:16:43 by ocviller          #+#    #+#             */
-/*   Updated: 2025/12/10 15:02:47 by ocviller         ###   ########.fr       */
+/*   Updated: 2026/01/05 10:43:15 by ocviller         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,16 @@
 class Fixed 
 {
     private:
-    int fixed_value;
-    static const int fract_bits = 8;
+    int _fixed_value;
+    static const int _fract_bits = 8;
     
     public:
-    
-    Fixed(int nbr)
-    {
-        nbr = 0;
-    }
+    Fixed &operator=(const Fixed &other);
+    int getRawBits(void) const;
+    Fixed();
+    Fixed(const Fixed &other);
+    void setRawBits(int const raw);
+    ~Fixed();
 };
 
 #endif
