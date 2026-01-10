@@ -6,13 +6,13 @@
 /*   By: ocviller <ocviller@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/05 10:57:41 by ocviller          #+#    #+#             */
-/*   Updated: 2026/01/05 15:05:00 by ocviller         ###   ########.fr       */
+/*   Updated: 2026/01/10 19:37:30 by ocviller         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 
-Fixed::Fixed(void)
+Fixed::Fixed(void) : _fixed_value(0) 
 {
     std::cout << "Default constructor called\n";
 }
