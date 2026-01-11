@@ -6,7 +6,7 @@
 /*   By: ocviller <ocviller@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/05 10:57:23 by ocviller          #+#    #+#             */
-/*   Updated: 2026/01/10 19:33:02 by ocviller         ###   ########.fr       */
+/*   Updated: 2026/01/11 01:43:42 by ocviller         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ class Fixed
     Fixed(const int nbr);
     Fixed(const float flo);
     Fixed(const Fixed &other);
+    Fixed &operator=(const Fixed &other);
     ~Fixed();
     int getRawBits(void) const;
     void setRawBits(int const raw);
@@ -33,7 +34,6 @@ class Fixed
     static const Fixed& max(const Fixed &a, const Fixed &b);
     static Fixed& min(Fixed &a, Fixed &b);
     static const Fixed& min(const Fixed &a, const Fixed &b);
-    Fixed &operator=(const Fixed &other);
     Fixed &operator++(void);
     Fixed operator++(int);
     Fixed &operator--(void);
