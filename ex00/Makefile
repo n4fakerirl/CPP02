@@ -6,11 +6,11 @@
 #    By: ocviller <ocviller@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/09 14:59:15 by ocviller          #+#    #+#              #
-#    Updated: 2025/12/12 15:15:24 by ocviller         ###   ########.fr        #
+#    Updated: 2026/01/30 16:04:07 by ocviller         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CC = g++
+CC = c++
 CFLAGS = -std=c++98 -Wall -Werror -Wextra
 NAME = a.out
 SRC = main.cpp Fixed.cpp
