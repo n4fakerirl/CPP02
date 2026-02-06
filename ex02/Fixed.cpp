@@ -6,7 +6,7 @@
 /*   By: ocviller <ocviller@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/05 10:57:41 by ocviller          #+#    #+#             */
-/*   Updated: 2026/01/10 19:41:41 by ocviller         ###   ########.fr       */
+/*   Updated: 2026/02/06 10:42:33 by ocviller         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,8 +109,8 @@ Fixed& Fixed::operator++(void)
 
 Fixed Fixed::operator++(int)
 {
-    float tmp = this->toFloat();
-    this->_fixed_value += 1;
+    Fixed tmp(*this);
+    ++this->_fixed_value;
     return (tmp);
 }
 
@@ -122,8 +122,8 @@ Fixed& Fixed::operator--(void)
 
 Fixed Fixed::operator--(int)
 {
-    float tmp = this->toFloat();
-    this->_fixed_value -= 1;
+    Fixed tmp(*this);
+    --this->_fixed_value;
     return (tmp);
 }
 
